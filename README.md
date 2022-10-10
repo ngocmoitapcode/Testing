@@ -1,18 +1,23 @@
-## Getting Started
+# Kiểm thử hộp đen
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Bài toán
+Một học sinh thi THPTQG cần ba môn Toán, Ngữ Văn, Tiếng Anh. Biết để đỗ NV1 cần tổng ba môn tối thiểu 26 điểm. Viết các ca kiểm thử dựa trên phương pháp giá trị biên và phân hoạch tương đương
+## Phân tích bài toán
+Mỗi môn Toán, Ngữ Văn, Tiếng Anh có thang điểm 10 với giá trị điểm hợp lệ thuộc khoảng 0 đến 10. Tổng ba môn tối thiểu là 0 điểm, tối đa là 30 điểm. Xét giá trị điểm theo dạng double.
+### 1. Dựa trên phương pháp giá trị biên
+Xác định giá trị max = 10.0; max- = 9.9; nom = 5.0; min+ = 0.1; min = 0.0. Dựa vào phương pháp kiểm thử giá trị biên mạnh. Ta có bảng các ca kiểm thử như sau: 
+| Toán | Ngữ Văn | Tiếng Anh | Actual Output | Expected Output |
+| ---- | ------- | --------- | ------------- | --------------- |
+| 5.0  |    5.0  |     10.0  | Trượt         | Trượt           |
+| 5.0  |    5.0  |     9.9   | Trượt         | Trượt           |
+| 5.0  |    5.0  |     5.0   | Trượt         | Trượt           |
+| 5.0  |    5.0  |     0.1   | Trượt         | Trượt           |
+| 5.0  |    5.0  |     0.0   | Trượt         | Trượt           |
+| 5.0  |    10.0 |     5.0   | Trượt         | Trượt           |
+| 5.0  |    9.9  |     5.0   | Trượt         | Trượt           |
+| 5.0  |    0.1  |     5.0   | Trượt         | Trượt           |
+| 5.0  |    0.0  |     5.0   | Trượt         | Trượt           |
+| 10.0 |    5.0  |     5.0   | Trượt         | Trượt           |
+| 9.9  |    5.0  |     5.0   | Trượt         | Trượt           |
+| 0.1  |    5.0  |     5.0   | Trượt         | Trượt           |
+| 0.0  |    5.0  |     5.0   | Trượt         | Trượt           |
