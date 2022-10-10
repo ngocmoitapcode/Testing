@@ -3,7 +3,13 @@
  */
 public class Demo {
     public String sumPoint(double math, double literature, double english) {
-        if (math + literature + english > 30.0 || math + literature + english < 0.0) {
+        if (math < 0 || math > 10) {
+            return "Không hợp lệ";
+        }
+        else if (literature < 0 || literature > 10) {
+            return "Không hợp lệ";
+        }
+        else if (english < 0 || english > 10) {
             return "Không hợp lệ";
         }
         else if(math + literature + english >= 26.0 ) {

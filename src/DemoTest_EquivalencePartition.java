@@ -16,36 +16,36 @@ public class DemoTest_EquivalencePartition {
     @Test
     public void Test2() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(-5, 5, 5));
+        assertEquals("Không hợp lệ", demo.sumPoint(-5, 5, 5));
     }
 
     @Test
     public void Test3() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(15, 5, 5));
+        assertEquals("Không hợp lệ", demo.sumPoint(15, 5, 5));
     }
 
     @Test
     public void Test4() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(5, 5, -5));
+        assertEquals("Không hợp lệ", demo.sumPoint(5, 5, -5));
     }
 
     @Test
     public void Test5() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(5, 5, 15));
+        assertEquals("Không hợp lệ", demo.sumPoint(5, 5, 15));
     }
 
     @Test
     public void Test6() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(5, -5, 5));
+        assertEquals("Không hợp lệ", demo.sumPoint(5, -5, 5));
     }
 
     @Test
     public void Test7() {
         Demo demo = new Demo();
-        assertEquals("Trượt", demo.sumPoint(5, 15, 5));
+        assertEquals("Không hợp lệ", demo.sumPoint(5, 15, 5));
     }
 }
