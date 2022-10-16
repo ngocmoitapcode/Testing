@@ -21,7 +21,7 @@ Xác định giá trị max = 10.0; max- = 9.9; nom = 5.0; min+ = 0.1; min = 0.0
 | 9.9  |    5.0  |     5.0   | Trượt         | Trượt           |
 | 0.1  |    5.0  |     5.0   | Trượt         | Trượt           |
 | 0.0  |    5.0  |     5.0   | Trượt         | Trượt           |
-### Dựa vào phân hoạch tương đương
+### 2. Dựa vào phân hoạch tương đương
 Xác định 3 miền giá trị cho đầu vào mỗi môn học như sau:\
 A = (-∞; 0.0) : không hợp lệ \
 B = [0.0; 10.0] : hợp lệ \
@@ -37,3 +37,5 @@ Dựa vào phương pháp phân hoạch tương đương mạnh ta có bảng sa
 |  5.0 |   15.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
 |  5.0 |    5.0  |    -5.0   | Không hợp lệ  | Không hợp lệ    |
 |  5.0 |    5.0  |    15.0   | Không hợp lệ  | Không hợp lệ    |
+### 3. Dựa vào dòng điều khiển
+<img src="img/CFG.png" width=50% height=50%>
