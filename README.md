@@ -38,4 +38,5 @@ Dựa vào phương pháp phân hoạch tương đương mạnh ta có bảng sa
 |  5.0 |    5.0  |    -5.0   | Không hợp lệ  | Không hợp lệ    |
 |  5.0 |    5.0  |    15.0   | Không hợp lệ  | Không hợp lệ    |
 ### 3. Dựa vào dòng điều khiển
-<img src="img/CFG.png" width=50% height=50%>
+Dưới đây là đồ thị dòng điều khiển của chương trình
+<img src="img/CFG.png" width=75% height=75%>
