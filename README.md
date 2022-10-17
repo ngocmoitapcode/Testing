@@ -39,4 +39,12 @@ Dựa vào phương pháp phân hoạch tương đương mạnh ta có bảng sa
 |  5.0 |    5.0  |    15.0   | Không hợp lệ  | Không hợp lệ    |
 ### 3. Dựa vào dòng điều khiển
 Dưới đây là đồ thị dòng điều khiển của chương trình
-<img src="img/CFG.png" width=75% height=75%>
+<img src="img/CFG.png" width=75% height=75%> <br>
+Dựa vào phương pháp kiểm thử dòng điều kiện với độ phủ C2 ta có bảng các ca kiểm thử như sau:
+| Toán | Ngữ Văn | Tiếng Anh | Actual Output | Expected Output |
+| ---- | ------- | --------- | ------------- | --------------- |
+|  5.0 |    5.0  |     5.0   | Trượt         | Trượt           |
+| -5.0 |    5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
+|  5.0 |    5.0  |    -5.0   | Không hợp lệ  | Không hợp lệ    |
+|  5.0 |   -5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
+|  9.0 |    8.0  |    9.0    |      Đỗ       |       Đỗ        |
