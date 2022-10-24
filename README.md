@@ -1,4 +1,4 @@
-# Kiểm thử hộp đen
+# Kiểm thử hộp đen & hộp trắng
 ### Họ và Tên: Phạm Bích Ngọc - Mã sinh viên: 20020454
 ## Bài toán
 Một học sinh thi THPTQG cần ba môn Toán, Ngữ Văn, Tiếng Anh. Biết để đỗ NV1 cần tổng ba môn tối thiểu 26 điểm. Viết các ca kiểm thử dựa trên phương pháp giá trị biên và phân hoạch tương đương
@@ -44,6 +44,16 @@ Dựa vào phương pháp kiểm thử dòng điều kiện với độ phủ C2
 | Toán | Ngữ Văn | Tiếng Anh | Actual Output | Expected Output |
 | ---- | ------- | --------- | ------------- | --------------- |
 |  5.0 |    5.0  |     5.0   | Trượt         | Trượt           |
+| -5.0 |    5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
+|  5.0 |    5.0  |    -5.0   | Không hợp lệ  | Không hợp lệ    |
+|  5.0 |   -5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
+|  9.0 |    8.0  |    9.0    |      Đỗ       |       Đỗ        |
+### 4. Dựa vào dòng dữ liệu
+Dưới đây là đồ thị dòng dữ liệu
+<img src="img/DFG.png" width=100% height=100%> <br>
+Dựa vào phương pháp kiểm thử dòng dữ liệu với điều kiện All c-uses some p-uses ta có bảng các ca kiểm thử như sau:
+| Toán | Ngữ Văn | Tiếng Anh | Actual Output | Expected Output |
+| ---- | ------- | --------- | ------------- | --------------- |
 | -5.0 |    5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
 |  5.0 |    5.0  |    -5.0   | Không hợp lệ  | Không hợp lệ    |
 |  5.0 |   -5.0  |     5.0   | Không hợp lệ  | Không hợp lệ    |
